@@ -1,0 +1,171 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>    
+        <item name="android:windowBackground">@drawable/bg_place</item>
+    </style>
+    
+    <style name="NoActionBar" parent="@android:style/Theme.Holo.Light">
+	    <item name="android:windowActionBar">false</item>
+	    <item name="android:windowNoTitle">true</item>
+	    <item name="android:windowBackground">@drawable/bg_place</item>
+	</style> 
+
+    <style name="Header">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="standardImage">
+        <item name="android:src">@drawable/bartype_event</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="HeaderDarkText">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    <style name="HeaderGrayText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="HeaderBlackText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/font_black</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="SmallDarkGreyText">
+        <item name="android:textColor">#444</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    <style name="SmallGrayText">
+        <item name="android:textColor">#444</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    <style name="SmallGrayText13">
+        <item name="android:textColor">#444</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    <style name="SmallBlackText">
+        <item name="android:textColor">#111</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    <style name="PlaceName">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#444</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    <style name="PlaceSubName">
+        <item name="android:textColor">#444</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    <style name="DetailsLabel">
+        <item name="android:textColor">#888</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    <style name="EventDetailsLeftLabel">
+        <item name="android:textColor">#222</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    <style name="EventDetailsRightContent">
+        <item name="android:textColor">#222</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    <style name="PlanFeed_SelectTown">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    <style name="PlaceSearch">
+        <item name="android:textColor">#444</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    <style name="HeaderWhiteText" parent="@style/Header">
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+    <style name="ListTitle" parent="@style/HeaderWhiteText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:background">@drawable/topbar</item>
+        <item name="android:paddingLeft">@dimen/standard_margin</item>
+    </style>
+    <style name="HeaderBlueText" parent="@style/Header">
+        <item name="android:textColor">@color/font_blue</item>
+    </style>
+    <style name="TownButton">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/btn_townselected</item>
+        <item name="android:layout_marginLeft">@dimen/standard_margin</item>
+        <item name="android:layout_marginRight">@dimen/standard_margin</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ListViewStyle">
+        <item name="android:divider">@drawable/divider</item>
+    	<item name="android:dividerHeight">1px</item>
+    </style>
+    <style name="FadeInFadeOut.Activity" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="MyFadeInFadeOutTranslucentTheme" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/FadeInFadeOut.Activity</item>
+    </style>
+    
+
+</resources>

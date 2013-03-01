@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="2dp"
+    android:addStatesFromChildren="true">
+    <ImageView
+        android:id="@+id/item__arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/list_item_arrow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/layout_item__image"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            >
+        <ImageView
+                android:id="@+id/item__image"
+                style="@style/standardImage"
+                android:adjustViewBounds="true"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:scaleType="centerCrop"/>
+    </RelativeLayout>
+    <!-- android:src="@drawable/bartype_default"  -->
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/layout_item__image"
+        android:layout_toLeftOf="@id/item__arrow"
+        android:layout_alignTop="@+id/layout_item__image"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/item__title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:maxLines="3"
+            android:textColor="#555"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:shadowRadius="1.5"
+        android:shadowDx="1"
+        android:shadowDy="1"
+           />
+        <TextView
+            android:id="@+id/item__subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:layout_toLeftOf="@id/item__arrow"
+            android:textColor="#777"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        android:shadowRadius="1.5"
+        android:shadowDx="1"
+        android:shadowDy="1"
+            />
+
+    <TextView
+            android:id="@+id/item__date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textColor="#777"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        android:shadowRadius="1.5"
+        android:shadowDx="1"
+        android:shadowDy="1"
+            android:layout_alignParentLeft="true"
+            />
+    <TextView
+        android:id="@+id/item__cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="false"
+        android:singleLine="true"
+        android:visibility="gone"
+        style="@style/SmallDarkGreyText"
+        android:layout_alignParentLeft="true"
+        />
+
+    </LinearLayout>
+    
+</RelativeLayout>

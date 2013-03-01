@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+        >
+    <LinearLayout
+            android:id="@+id/layout_drawer_hldr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:background="#333333" android:visibility="gone"
+                android:id="@+id/layout_drawer"
+                >
+
+            <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+                    
+                <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" android:padding="10px">
+                    <ImageButton
+                            android:id="@+id/slider_btn_events"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null" android:src="@drawable/btn_slider_events"/>
+
+                </RelativeLayout>
+                
+                <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" android:padding="10px">
+                    <ImageButton
+                            android:id="@+id/slider_btn_groups"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null" android:src="@drawable/btn_slider_groups"/>
+
+                </RelativeLayout>
+
+                
+                <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" android:padding="10px">
+                    <ImageButton
+                            android:id="@+id/slider_btn_about"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null" android:src="@drawable/btn_slider_about"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

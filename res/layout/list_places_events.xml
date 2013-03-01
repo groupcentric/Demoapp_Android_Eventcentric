@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/tasklist_activity_loading"
+            >
+        <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tasklist_activity_progress"
+                android:visibility="gone"
+                />
+        <!--Blachat - 03292011 - Made the following textview gone -->
+        <TextView
+                android:id="@+id/tasklist_activity_progress_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tasklist_activity_progress"
+                android:visibility="gone"
+                />
+    </RelativeLayout>
+
+
+    <TextView
+            android:id="@+id/list_title"
+            android:text="Ongoing"
+            style="@style/ListTitle"
+            android:visibility="gone"
+            />
+    <TextView
+            android:id="@+id/no_information"
+            android:text="No Information"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            style="@style/HeaderBlueText"
+            android:textStyle="normal"
+            android:textColor="@color/font_gray"
+            android:visibility="gone"
+            android:autoLink="web"
+            />
+    <ListView android:id="@android:id/list"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent"
+              android:layout_below="@id/list_title"
+              android:layout_above="@+id/bottomBanner"
+              style="@style/ListViewStyle"
+              android:fadingEdge="none"
+            />
+
+    
+
+    <ImageView
+            android:src="@drawable/blank_no_events"
+            android:id="@+id/img_no_events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:layout_above="@+id/bottomBanner"
+            >
+    </ImageView>
+    
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/botbar"
+                    android:id="@+id/bottomBanner"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/list"
+                    android:visibility="gone"
+            >
+
+        <ImageButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_centerVertical="true"
+                android:id="@+id/btnGroupPlan"
+                android:background="@android:color/transparent"
+                />
+
+        
+
+        <!-- khb changed this to Add Towns TownButton from Manage Places GenericButton 092511 -->
+        <Button
+                android:id="@+id/btnSelectedLocation"
+                android:text="New York, NY"
+                style="@style/TownButton"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                />
+        
+
+
+        <LinearLayout android:focusable="true"
+                      android:focusableInTouchMode="true" android:layout_width="0px"
+                      android:layout_height="0px"/>
+
+        
+        
+        <!--android:layout_alignParentRight="true"-->
+    </RelativeLayout>
+    <!--Blachat - 03152011 - Added GroupPlans \ Facebook event \footer-->
+
+</RelativeLayout>
+
+

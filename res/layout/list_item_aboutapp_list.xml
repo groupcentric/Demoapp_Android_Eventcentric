@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/list_item_background">
+
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/layout_item__image"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+        <ImageView
+                android:id="@+id/item__image"
+                style="@style/standardImage"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:focusable="false"/>
+    </RelativeLayout>
+
+
+    
+
+    <ImageView
+            android:id="@+id/item__arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_item_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/layout_item__image"
+            android:layout_toLeftOf="@id/item__checkbox"
+            android:layout_marginLeft="1dp"
+            android:layout_alignTop="@+id/layout_item__image"
+            android:id="@+id/layout_title">
+
+        <TextView
+                android:id="@+id/item__text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                style="@style/PlaceName"/>
+        <TextView
+                android:id="@+id/item__text2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:ellipsize="marquee"
+                android:singleLine="false"
+                android:maxLines="2"
+                style="@style/SmallGrayText"
+                android:layout_marginRight="18dp"
+                />
+    </LinearLayout>
+
+   
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eventcentric"
+    android:versionCode="4"
+    android:versionName="1.02" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+    <!-- Urban Airship Permission Requirements -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- End Urban Airship Permission Requirements -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <application
+        android:name="App"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoActionBar"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!--Groupcentric Requirements for activities-->
+        <activity android:name="com.groupcentric.android.gc_AttachItem" 
+            android:theme="@style/gc_FadeInFadeOutTranslucentTheme"/>
+        <activity android:name="com.groupcentric.android.gc_ContactList"
+            android:theme="@style/NoActionBar" />
+        <activity android:name="com.groupcentric.android.gc_EditGroupName" 
+            android:theme="@style/gc_FadeInFadeOutTranslucentTheme"/>
+        <activity android:name="com.groupcentric.android.gc_GPS" 
+            android:theme="@style/gc_FadeInFadeOutTranslucentTheme"/>
+        <activity android:name="com.groupcentric.android.gc_GroupDetails"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/NoActionBar" />
+        <activity android:name="com.groupcentric.android.gc_NotificationsList"
+            android:theme="@style/NoActionBar" />
+        <activity android:name="com.groupcentric.android.gc_PictureViewer"
+            android:theme="@style/NoActionBar" />
+        <activity android:name="com.groupcentric.android.gc_Profile"
+            android:theme="@style/NoActionBar" />
+        <activity android:name="com.groupcentric.android.gc_ProfileWebView"/>
+        <activity android:name="com.groupcentric.android.gc_ShareSelector"
+            android:theme="@style/NoActionBar" />
+        <activity android:name="com.groupcentric.android.gc_ShareWebLink"
+            android:theme="@style/NoActionBar" />
+        <activity android:name="com.groupcentric.android.gc_StartGroup"
+            android:theme="@style/NoActionBar" />
+        <activity android:name="com.groupcentric.android.gc_Type4Details"
+            android:theme="@style/NoActionBar" />
+        <activity android:name="com.groupcentric.android.gc_UploadImage" 
+            android:theme="@style/gc_FadeInFadeOutTranslucentTheme"/>
+        
+        
+        
+        <service android:name="com.groupcentric.android.gc_UpdateUATokenService"/>
+          
+          
+        <!-- Urban Airship Requirements In App Element -->
+        <receiver android:name="com.urbanairship.CoreReceiver" >
+
+            <!-- REQUIRED IntentFilter - For Helium and Hybrid -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.urbanairship.push.PushService" />
+        <service android:name="com.urbanairship.push.PushWorkerService" />        
+		<service android:name="com.urbanairship.analytics.EventService"/>
+
+        <receiver android:name="com.groupcentric.android.gc_UAIntentReceiver" />
+                <!-- This is required for persisting preferences related to push and location -->       
+                 <provider android:name="com.urbanairship.UrbanAirshipProvider"            
+                     android:authorities="com.eventcentric.urbanairship.provider"           
+                      android:exported="false"            
+                      android:multiprocess="true" />
+
+        <!-- End Of Urban Airship Requirements In App Element -->
+    
+
+    
+        
+        
+        
+        <activity android:name=".GroupsActivity"
+             android:theme="@style/NoActionBar"/>
+        <activity android:name=".EventDetails"
+             android:theme="@style/NoActionBar"/>
+        <activity android:name=".helper.AboutActivity"
+             android:theme="@style/NoActionBar"/>
+        <activity android:name=".LocationSelector" android:theme="@style/MyFadeInFadeOutTranslucentTheme"/>
+        <activity android:name=".helper.ManageTowns"
+             android:theme="@style/NoActionBar"
+             android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".helper.AboutAppWebView"
+             android:theme="@style/NoActionBar"/>
+        
+        
+        
+    </application>
+    
+
+</manifest>

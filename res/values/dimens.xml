@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="arrow_offset">2dp</dimen>
+    <dimen name="standard_margin">10dp</dimen>
+    <dimen name="day_button_min_height">25dp</dimen>
+    <dimen name="day_button_height">25dp</dimen>
+    <dimen name="small_text">14sp</dimen>
+</resources>

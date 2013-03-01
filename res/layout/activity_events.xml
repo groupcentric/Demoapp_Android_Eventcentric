@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/topbar_home"
+                    android:id="@+id/layout_header"
+            >
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               
+                >
+            <ImageView
+                    android:src="@drawable/topbar_logo_home"
+                    android:id="@+id/topbar_logo"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    />
+            <ImageButton
+                    android:id="@+id/header_btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:src="@drawable/btn_header_notifications"
+                    android:layout_marginRight="5dip"
+                    android:visibility="gone"/>
+          
+
+                        <ProgressBar
+                        android:layout_toRightOf="@+id/topbar_logo"
+                        android:id="@+id/header_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"/>
+                        
+                        <ImageButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/changeTownBtn"
+                android:background="@drawable/btn_change"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_header"
+                android:id="@+id/layout_navmenu"
+        >
+     <LinearLayout
+            android:id="@+id/layout_drawer_hldr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:background="@drawable/secondheader_bg"
+                android:id="@+id/layout_drawer"
+                >
+
+            <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+                    
+                <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+                    <ImageButton
+                            android:id="@+id/slider_btn_events"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null" android:src="@drawable/btn_slider_events"/>
+
+                </RelativeLayout>
+                
+                <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" >
+                    <ImageButton
+                            android:id="@+id/slider_btn_groups"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null" android:src="@drawable/btn_slider_groups"/>
+
+                </RelativeLayout>
+
+                
+                <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" >
+                    <ImageButton
+                            android:id="@+id/slider_btn_about"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null" android:src="@drawable/btn_slider_about"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        
+     </LinearLayout>
+   </RelativeLayout>
+
+
+
+<RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_navmenu"
+        >
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+        
+        
+        
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/thirdheader_bg"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+			<ImageButton
+                    android:id="@+id/btn_scroll_nightlife"
+                    android:src="@drawable/scroll_nightlife_selected" android:textSize="11dp" android:background="@null"
+                    android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+
+            <ImageButton
+                    android:id="@+id/btn_scroll_featured"
+                    android:src="@drawable/scroll_featured_unselected" android:textSize="11dp" android:background="@null"
+                    android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+
+            <ImageButton
+                    android:id="@+id/btn_scroll_food"
+                    android:src="@drawable/scroll_food_unselected" android:textSize="11dp" android:background="@null"
+                    android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+
+            <ImageButton
+                    android:id="@+id/btn_scroll_coffee"
+                    android:src="@drawable/scroll_coffee_unselected" android:textSize="11dp" android:background="@null"
+                    android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+
+
+
+        </LinearLayout>
+   
+        
+        
+        
+        
+        
+        
+        <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content" android:id="@+id/layout_event_search"
+                android:visibility="gone"
+                >
+            <ImageView android:layout_height="wrap_content" android:src="@drawable/searchbar" android:id="@+id/img_search"
+                       android:layout_width="fill_parent" android:scaleType="fitXY"></ImageView>
+                    <LinearLayout android:focusable="true"
+                          android:focusableInTouchMode="true" android:layout_width="0px"
+                          android:layout_height="0px"/>
+            <EditText android:layout_marginRight="2dp" android:layout_gravity="center_vertical" android:layout_weight="1"
+                      android:inputType="textAutoCorrect" android:layout_height="wrap_content"
+                      android:layout_width="fill_parent" android:layout_marginLeft="10dp" android:background="@null"
+                      android:layout_alignBottom="@+id/img_search" android:layout_alignTop="@+id/img_search"
+                      android:maxLines="1" android:layout_alignLeft="@+id/img_search"
+                      android:layout_alignRight="@+id/img_search" android:paddingLeft="5dp" android:paddingRight="25dp"
+                      android:id="@+id/edtEventSearchTxt" android:hint="Search Events.."
+                      style="@style/PlaceSearch"
+                    ></EditText>
+
+            <ImageButton
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/btn_search" android:id="@+id/btnSearchEvents"
+                    android:layout_gravity="center_vertical" android:layout_marginRight="21dp"/>
+
+        </RelativeLayout>
+
+        
+       
+
+        <include
+                layout="@layout/list_places_events"/>
+    </LinearLayout>
+    
+</RelativeLayout>
+
+</LinearLayout>

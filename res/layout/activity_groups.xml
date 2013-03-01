@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout_groups" >
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/topbar_home"
+                    android:id="@+id/layout_header"
+            >
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               
+                >
+            <ImageView
+                    android:src="@drawable/topbar_logo_home"
+                    android:id="@+id/topbar_logo"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    />
+            
+           
+            <fragment
+		        android:id="@+id/gc_notifications_btn"
+		        android:name="com.groupcentric.android.gc_NotificationsButton"
+		        android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentRight="true"/>
+            
+            <ImageButton
+                    android:id="@+id/header_btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:src="@drawable/btn_header_notifications"
+                    android:layout_marginRight="5dip"
+                    android:visibility="gone"/>
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/topbar_logo"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    >
+                <TextView
+                        android:id="@+id/header_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_alignParentRight="true"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/font_white"
+                        android:visibility="gone"
+                        android:layout_marginRight="10dip"
+                        android:ellipsize="end" android:lines="1" android:scrollHorizontally="true"/>
+
+
+            </RelativeLayout>
+
+                        <ProgressBar
+                        android:layout_toRightOf="@+id/topbar_logo"
+                        android:id="@+id/header_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="?android:attr/progressBarStyleSmallInverse"
+                        android:visibility="gone"
+                        android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_header"
+                android:id="@+id/layout_navmenu"
+        >
+    <LinearLayout
+            android:id="@+id/layout_drawer_hldr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:background="@drawable/secondheader_bg"
+                android:id="@+id/layout_drawer"
+                >
+
+            <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+                    
+                <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" >
+                    <ImageButton
+                            android:id="@+id/slider_btn_events"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null" android:src="@drawable/btn_slider_events"/>
+
+                </RelativeLayout>
+                
+                <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" >
+                    <ImageButton
+                            android:id="@+id/slider_btn_groups"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null" android:src="@drawable/btn_slider_groups"/>
+
+                </RelativeLayout>
+
+                
+                <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" >
+                    <ImageButton
+                            android:id="@+id/slider_btn_about"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null" android:src="@drawable/btn_slider_about"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+       
+    </LinearLayout>
+</RelativeLayout>
+
+    
+    
+    
+    <fragment class="com.groupcentric.android.gc_GroupsListFragment"
+        android:layout_below="@+id/layout_navmenu"
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    
+</LinearLayout>
+
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        >
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="12dp"
+    >
+    <TextView
+        android:id="@+id/manage_towns__header"
+        android:paddingLeft="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" android:paddingBottom="10dp"
+            android:background="@drawable/list_separator_bg"
+            android:layout_alignParentTop="true"
+            android:text="Add a town"
+        />
+
+    <RelativeLayout
+        android:id="@+id/manage_towns__search_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/manage_towns__header"
+        >
+    
+        <AutoCompleteTextView
+            android:id="@+id/manage_towns__search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/HeaderBlackText"
+            android:hint="ex: Boston, MA"
+            android:completionThreshold="1"
+            android:dropDownWidth="fill_parent"
+            android:inputType="textAutoCorrect"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/manage_towns__btn_add"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            />
+    
+        <ImageButton
+            android:id="@+id/manage_towns__btn_add"
+            android:text="Add"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_add"       
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/manage_towns__my_towns"
+        android:text="Manage my towns"
+        android:layout_below="@id/manage_towns__search_area"
+        android:paddingLeft="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" android:paddingBottom="10dp"
+            android:background="@drawable/list_separator_bg"
+
+        />
+
+    <ListView android:id="@android:id/list"
+        android:layout_below="@id/manage_towns__my_towns"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    />
+
+</RelativeLayout>
+  
+</RelativeLayout>

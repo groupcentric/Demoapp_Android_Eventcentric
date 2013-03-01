@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/list_item_background">
+
+    
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+        <TextView
+                android:id="@+id/item__textt1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="#444"
+		        android:textSize="14sp"
+		        android:textStyle="bold"
+		        android:shadowRadius="1.5"
+		        android:shadowDx="1"
+		        android:shadowDy="1"
+                android:text="Thank you for using Eventcentric!"
+                />
+        <TextView
+                android:id="@+id/item__text2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:maxLines="3"
+                android:text="We hope you're enjoying the ability to share Eventbrite events into private group chats with your friends."
+                android:layout_marginTop="8dp"
+                android:textColor="#444"
+		        android:textSize="13sp"
+		        android:textStyle="normal"
+		        android:shadowRadius="1.5"
+		        android:shadowDx="1"
+		        android:shadowDy="1"
+    			/>
+        
+        <TextView
+                android:id="@+id/item__text3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:maxLines="3"
+                android:textColor="#444"
+		        android:textSize="13sp"
+		        android:textStyle="normal"
+		        android:shadowRadius="1.5"
+		        android:shadowDx="1"
+		        android:shadowDy="1"
+                android:text="Get any of the other apps below and your groups will stay with you in each of them!"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+
+   
+</RelativeLayout>
